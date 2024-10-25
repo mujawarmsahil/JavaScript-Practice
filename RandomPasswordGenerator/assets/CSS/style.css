@@ -1,0 +1,176 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body , .container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/volodymyr-kondriianenko--eiswENkF9c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#passwordBox
+{
+    min-width: 45%;
+    max-width: 50%;
+    min-height: 60%;
+}
+
+.passwordBox
+{
+    margin-right: 150px;
+    padding: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.048);
+    background-color: rgba(0, 0, 0, 0.288);
+    box-shadow: 0 0 10px 1px #f1f1f1;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+.passwordBox header 
+{
+    margin-bottom: 20px;
+}
+
+.passwordBox header #demo
+{
+    font-size: 3rem;
+    color: #fff;
+    -webkit-text-stroke: 1px #00000073;
+}
+
+.passwordBox header h1 span
+{
+    color: #d6a9b1;
+}
+
+.passwordBox .inputContainer
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.passwordBox .inputContainer #inputBox
+{
+    width: 400px;
+    /* padding: 20px; */
+    padding-left: 10px;
+    outline: none;
+    border-right: none;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+    box-shadow: 0 0 15px 1px #111 inset;
+    border: 1px solid rgb(192, 174, 174);
+    border-radius: 8px;
+    height: 50px;
+    border-right: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#inputBox::selection
+{
+    color: darkslategray;
+    background-color: #fff;
+}
+
+.passwordBox .inputContainer span
+{
+    
+    display: contents;
+}
+
+.passwordBox .inputContainer span img
+{
+    /*padding: 20px;
+    */border-radius: 8px;
+    background-color: #00000027;
+    width: 50px;
+    height: 50px;
+    padding: 5px 0;
+    cursor: pointer;
+    border: 1px solid rgb(192, 174, 174);
+    border-left: none;
+    object-fit: contain;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.passwordBox .inputContainer #inputBox:focus
+{
+    border: 2px solid rgb(194, 161, 161);
+    border-right: none;
+}
+
+.passwordBox .inputContainer:has(#inputBox:focus) span img
+{
+    border: 2px solid rgb(194, 161, 161);
+    border-left: none;
+}
+
+.getPassBtnContainer
+{
+    margin-top:30px;
+}
+
+.getPassBtnContainer .getPassBtn
+{
+    padding:15px;
+    border-radius:15px;
+    outline:none;
+    border:none;
+    background-color:#6610100e;
+    font-weight:bolder;
+    color:white;
+    box-shadow:0 0 15px 0px #000;
+    cursor: pointer;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+}
+
+.getPassBtn:hover{
+    animation-name: buttonAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes buttonAnimation{
+    0%
+    {
+        scale:1;
+    }
+
+    50%
+    {
+        scale:1.05;
+    }
+
+    100%
+    {
+        scale:1px;
+    }
+}
